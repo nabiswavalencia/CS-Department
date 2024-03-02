@@ -1,0 +1,593 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="bg-gray-900">
+      <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div class="relative flex items-center justify-between">
+          <a href="/" aria-label="ComputerScience" title="ComputerScience" class="inline-flex items-center">
+           <img src="logo.png" alt="">
+          </a>
+          <ul class="flex items-center hidden space-x-8 lg:flex ">
+            <li><a href="/" aria-label="Home" title="Home" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Home</a></li>
+            <li><a href="Department.html" aria-label="Department" title="Department" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Department</a></li>
+            <!-- <li><a href="Programmes.html" aria-label="Programmes" title="Programmes" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Programmes</a></li> -->
+
+            <li><a href="Clubs.html" aria-label="Clubs" title="Clubs" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Clubs</a></li>
+            <li><a href="Events.html" aria-label="Events" title="Events" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Events</a></li>
+            
+          </ul>
+          <!-- Mobile menu -->
+          <div class="lg:hidden">
+            <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+              <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+              </svg>
+            </button>
+            <!-- Mobile menu dropdown
+            <div class="absolute top-0 left-0 w-full">
+              <div class="p-5 bg-white border rounded shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                  <div>
+                    <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+                      <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                        <rect x="3" y="1" width="7" height="12"></rect>
+                        <rect x="3" y="17" width="7" height="6"></rect>
+                        <rect x="14" y="1" width="7" height="6"></rect>
+                        <rect x="14" y="11" width="7" height="12"></rect>
+                      </svg>
+                      <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
+                    </a>
+                  </div>
+                  <div>
+                    <button aria-label="Close Menu" title="Close Menu" class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                      <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <nav>
+                  <ul class="space-y-4">
+                    <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Product</a></li>
+                    <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Features</a></li>
+                    <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Pricing</a></li>
+                    <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">About us</a></li>
+                    <li>
+                      <a
+                        href="/"
+                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                        aria-label="Sign up"
+                        title="Sign up"
+                      >
+                        Sign up
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-sky-400 bg-opacity-100 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-h-screen-xl md:px-24 lg:px-8 lg:py-20">
+       
+      <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+          <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
+          
+            <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+              <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+           DEPARTMENT PAGE </h2>
+              <p class="text-base text-gray-700 md:text-lg">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
+              </p>
+            </div>
+            <!-- <div>
+              <a
+                href="/"
+                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+              >
+                Get started
+              </a>
+            </div> -->
+          </div>
+        </div>
+      
+      </div>
+
+      <!-- About department -->
+      <div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="grid gap-20 row-gap-8 lg:grid-cols-2">
+            <div>
+                <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96" src="dr.ondulo.jpg" alt="" />
+              </div>
+            <div class="flex flex-col justify-center">
+           
+            <div class="max-w-xl mb-6">
+              <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+              DEPARTMENT OF COMPUTER SCIENCE   <span class="relative px-1">
+                  <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400"></div>
+                  <!-- <span class="relative inline-block text-deep-purple-accent-400">a lazy dog</span> -->
+                </span>
+              </h2>
+              <p class="text-base text-gray-700 md:text-lg">
+                The School of Computing and Informatics of Masinde Muliro Universityy of Science and Technology is one of the promising Schools in the University. The School was was approved and officially formed on January, 2017 after splitting from the former Faculty of Science.
+    
+                We offer in-depth content in Computer Science and Information Technology that spans a wide range, from theoretical and algorithmic foundations to cutting-edge developments in ICT for Development, green technologies, security, dynamic databases and other exciting areas. We are equal to task and dedicated to producing quality products that can take on challenging programming jobs          </p>
+            </div> 
+          </div>
+          
+        </div>
+      </div>
+      <div class="grid grid-cols-4">
+        <!-- SIDE BAR -->
+        <div class="col-span-1">
+          <div class="px-4 py-16  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-20 lg:py-20">
+            <div class="  h-full ">
+              
+                <div class="text-center flex mb-4 items-center justify-center gap-2">
+                    <div class="flex flex-row items-center justify-center w-10 h-10 mx-auto  rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                      <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                        <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                      </svg>
+                    </div>
+                    <div>   <h6 class="mb-2 mr-4 text-sm font-bold leading-5 tracking-wider uppercase">
+                      <a href="#Programmes">Programmes offered</a> 
+                      </h6>
+                    </div>
+                  
+                  </div>
+                  <div class="text-center flex mb-4 items-center justify-center gap-2">
+                    <div class="flex flex-row items-center justify-center w-10 h-10 mx-auto  rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                      <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                        <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                      </svg>
+                    </div>
+                    <div>   <h6 class="mb-2 mr-4 text-sm font-bold leading-5 tracking-wider uppercase">
+                       <a href="#SCIreps">SCI Representatives</a> 
+                      </h6>
+                    </div>
+                  
+                  </div>
+                  <div class="text-center flex  mb-4 items-center justify-center gap-2">
+                    <div class="flex flex-row items-center justify-center w-10 h-10 mx-auto  rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                      <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                        <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                      </svg>
+                    </div>
+                    <div>   <h6 class="mb-2 mr-4 text-sm font-bold leading-5 tracking-wider uppercase">
+                        <a href="#staff">CS STAFF MEMBERS</a>
+                      </h6>
+                    </div>
+                  
+                  </div>
+                  <div class="text-center flex items-center justify-center gap-2">
+                    <div class="flex flex-row items-center justify-center w-10 h-10 mx-auto  rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                      <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                        <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                      </svg>
+                    </div>
+                    <div>   <h6 class="mb-2 mr-4 text-sm font-bold leading-5 tracking-wider uppercase">
+                       <a href="#ClassReps">CLASS Representatives</a> 
+                      </h6>
+                    </div>
+                  
+                  </div>
+            
+            </div>
+          </div>
+        </div>
+        <div class="col-span-3 border-l-2">
+
+          <!-- Programmes -->
+          
+          <div id="Programmes" class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+              <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                DEPARTMENT OF COMPUTER SCIENCE PROGRAMMES  
+                </h2>
+              <p class="text-left text-gray-700 lg:text-lg">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
+              </p>
+            </div>
+            <div class="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              <div class="flex flex-col justify-between p-5 border rounded shadow-sm">
+                <div>
+                  <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+                    <svg class="w-12 h-12 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                      <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                  </div>
+                  <h6 class="mb-2 font-semibold leading-5">Bachelor of Science (Computer Science)</h6>
+                  <p class="mb-3 text-sm text-gray-900">
+                    A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear.
+                  </p>
+                </div>
+                <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+              </div>
+              <div class="flex flex-col justify-between p-5 border rounded shadow-sm">
+                <div>
+                  <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+                    <svg class="w-12 h-12 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                      <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                  </div>
+                  <h6 class="mb-2 font-semibold leading-5">Bachelor Of Technology Education (Computer Studies)</h6>
+                  <p class="mb-3 text-sm text-gray-900">
+                    Rough pomfret lemon shark plownose chimaera southern sandfish kokanee northern sea.
+                  </p>
+                </div>
+                <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+              </div>
+              <div class="flex flex-col justify-between p-5 border rounded shadow-sm">
+                <div>
+                  <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+                    <svg class="w-12 h-12 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                      <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                  </div>
+                  <h6 class="mb-2 font-semibold leading-5">Bachelor of Science (Computer Security and Forensics)</h6>
+                  <p class="mb-3 text-sm text-gray-900">
+                    A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.
+                  </p>
+                </div>
+                <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+              </div>
+             
+            </div>
+          </div>
+ <!-- SCI reps -->
+ <h2 id="SCIreps" class="max-w-lg underline mb-6 font-sans text-left text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+  SCI Representatives </h2> <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="grid max-w-screen-lg gap-16 row-gap-5 md:row-gap-8 sm:mx-auto lg:grid-cols-2">
+    <div class="transition duration-300 transform bg-white rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
+      <div class="relative">
+        <img class="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96" src="https://images.pexels.com/photos/3182796/pexels-photo-3182796.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+        <div class="absolute inset-0 bg-gray-800 bg-opacity-25"></div>
+      </div>
+      <div class="px-6 py-8 border border-t-0 rounded-b sm:px-8">
+        <h5 class="mb-2 text-xl font-bold leading-none sm:text-2xl">
+          Male SCI representative
+        </h5>
+        <p class="mb-5 text-gray-700">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut perspiciatis unde.
+        </p>
+        <button
+          type="submit"
+          class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+        >
+          Read more
+        </button>
+      </div>
+    </div>
+    <div class="transition duration-300 transform bg-white rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
+      <div class="relative">
+        <img class="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96" src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+        <div class="absolute inset-0 bg-gray-800 bg-opacity-25"></div>
+      </div>
+      <div class="px-6 py-8 border border-t-0 rounded-b sm:px-8">
+        <h5 class="mb-2 text-xl font-bold leading-none sm:text-2xl"> Female SCI representative</h5>
+        <p class="mb-5 text-gray-700">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut perspiciatis unde.
+        </p>
+        <button
+          type="submit"
+          class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+        >
+          Read more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Staff-->
+<div id="staff" class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+    <div>
+  </div>
+  <h2 class="max-w-lg underline mb-6 font-sans text-left text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+      Members of Staff </h2>
+  </div>
+  <div class="grid max-w-screen gap-8 row-gap-5 mb-8 sm:grid-cols-2 lg:grid-cols-3 sm:mx-auto">
+      <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+          <img class="object-cover w-full h-56 md:h-64 xl:h-full" src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+          <div class="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+            <p class="mb-4 text-lg font-bold text-gray-100">The Starry Night</p>
+            <p class="text-sm tracking-wide text-gray-300">
+              Vincent Van Gogh’s most popular painting, The Starry Night was created by Van Gogh at the asylum in Saint-Rémy, where he’d committed himself in 1889.
+            </p>
+          </div>
+        </div> 
+        <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+          <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+          <div class="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+            <p class="mb-4 text-lg font-bold text-gray-100">The Starry Night</p>
+            <p class="text-sm tracking-wide text-gray-300">
+              Vincent Van Gogh’s most popular painting, The Starry Night was created by Van Gogh at the asylum in Saint-Rémy, where he’d committed himself in 1889.
+            </p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+          <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+          <div class="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+            <p class="mb-4 text-lg font-bold text-gray-100">The Starry Night</p>
+            <p class="text-sm tracking-wide text-gray-300">
+              Vincent Van Gogh’s most popular painting, The Starry Night was created by Van Gogh at the asylum in Saint-Rémy, where he’d committed himself in 1889.
+            </p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+          <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+          <div class="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+            <p class="mb-4 text-lg font-bold text-gray-100">The Starry Night</p>
+            <p class="text-sm tracking-wide text-gray-300">
+              Vincent Van Gogh’s most popular painting, The Starry Night was created by Van Gogh at the asylum in Saint-Rémy, where he’d committed himself in 1889.
+            </p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+          <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+          <div class="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+            <p class="mb-4 text-lg font-bold text-gray-100">The Starry Night</p>
+            <p class="text-sm tracking-wide text-gray-300">
+              Vincent Van Gogh’s most popular painting, The Starry Night was created by Van Gogh at the asylum in Saint-Rémy, where he’d committed himself in 1889.
+            </p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+          <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+          <div class="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+            <p class="mb-4 text-lg font-bold text-gray-100">The Starry Night</p>
+            <p class="text-sm tracking-wide text-gray-300">
+              Vincent Van Gogh’s most popular painting, The Starry Night was created by Van Gogh at the asylum in Saint-Rémy, where he’d committed himself in 1889.
+            </p>
+          </div>
+        </div>  
+  
+  </div>
+ 
+</div>
+<!-- Class Representatives -->
+<h2 id="ClassReps" class="max-w-lg  mx-auto font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none  group">
+  <span class="inline-block underline mb-1 sm:mb-4">
+    Class Representatives
+  </span>
+</h2>
+<div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+  
+    <p class="max-w-lg mb-5 font-sans text-lg font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
+      <span class="inline-block mb-1 sm:mb-4">
+        1st Year Representatives
+      </span>
+  </p>
+  <div class="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3">
+   
+    <div class="flex">
+      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+      <div class="flex flex-col justify-center">
+        <p class="text-lg font-bold">Alice Melbourne</p>
+        <p class="text-sm text-gray-800">Computer Science</p>
+      </div>
+    </div>
+    <div class="flex">
+      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="Person" />
+      <div class="flex flex-col justify-center">
+        <p class="text-lg font-bold">Martin Garix</p>
+        <p class="text-sm text-gray-800">ETS</p>
+      </div>
+    </div>
+    <div class="flex">
+      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+      <div class="flex flex-col justify-center">
+        <p class="text-lg font-bold">Andrew Larkin</p>
+        <p class="text-sm text-gray-800">Computer Forensics</p>
+      </div>
+    </div>
+    <div class="flex">
+      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+      <div class="flex flex-col justify-center">
+        <p class="text-lg font-bold">Sophie Denmo</p>
+        <p class="text-sm text-gray-800">Assistant CS</p>
+      </div>
+    </div>
+    <div class="flex">
+      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931553/pexels-photo-3931553.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+      <div class="flex flex-col justify-center">
+        <p class="text-lg font-bold">Benedict Caro</p>
+        <p class="text-sm text-gray-800">Assistant ETS</p>
+      </div>
+    </div>
+    <div class="flex">
+      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3783255/pexels-photo-3783255.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+      <div class="flex flex-col justify-center">
+        <p class="text-lg font-bold">Adam Molly</p>
+        <p class="text-sm text-gray-800">Assistant CF</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+  
+  <p class="max-w-lg mb-5 font-sans text-lg font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
+    <span class="inline-block mb-1 sm:mb-4">
+      2nd Year Representatives
+    </span>
+</p>
+<div class="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3">
+   
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Alice Melbourne</p>
+      <p class="text-sm text-gray-800">Computer Science</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Martin Garix</p>
+      <p class="text-sm text-gray-800">ETS</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Andrew Larkin</p>
+      <p class="text-sm text-gray-800">Computer Forensics</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Sophie Denmo</p>
+      <p class="text-sm text-gray-800">Assistant CS</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931553/pexels-photo-3931553.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Benedict Caro</p>
+      <p class="text-sm text-gray-800">Assistant ETS</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3783255/pexels-photo-3783255.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Adam Molly</p>
+      <p class="text-sm text-gray-800">Assistant CF</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+  
+  <p class="max-w-lg mb-5 font-sans text-lg font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
+    <span class="inline-block mb-1 sm:mb-4">
+      3rd Year Representatives
+    </span>
+</p>
+<div class="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3">
+   
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Alice Melbourne</p>
+      <p class="text-sm text-gray-800">Computer Science</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Martin Garix</p>
+      <p class="text-sm text-gray-800">ETS</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Andrew Larkin</p>
+      <p class="text-sm text-gray-800">Computer Forensics</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Sophie Denmo</p>
+      <p class="text-sm text-gray-800">Assistant CS</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931553/pexels-photo-3931553.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Benedict Caro</p>
+      <p class="text-sm text-gray-800">Assistant ETS</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3783255/pexels-photo-3783255.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Adam Molly</p>
+      <p class="text-sm text-gray-800">Assistant CF</p>
+    </div>
+  </div>
+</div> 
+</div>
+<div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+  
+  <p class="max-w-lg mb-5 font-sans text-lg font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
+    <span class="inline-block mb-1 sm:mb-4">
+      4th Year Representatives
+    </span>
+</p>
+<div class="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3">
+   
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Alice Melbourne</p>
+      <p class="text-sm text-gray-800">Computer Science</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Martin Garix</p>
+      <p class="text-sm text-gray-800">ETS</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Andrew Larkin</p>
+      <p class="text-sm text-gray-800">Computer Forensics</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Sophie Denmo</p>
+      <p class="text-sm text-gray-800">Assistant CS</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931553/pexels-photo-3931553.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Benedict Caro</p>
+      <p class="text-sm text-gray-800">Assistant ETS</p>
+    </div>
+  </div>
+  <div class="flex">
+    <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3783255/pexels-photo-3783255.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <div class="flex flex-col justify-center">
+      <p class="text-lg font-bold">Adam Molly</p>
+      <p class="text-sm text-gray-800">Assistant CF</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+        </div>
+      </div>
+   
+
+     
+
+</body>
+</html>
