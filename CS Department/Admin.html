@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Admin Page</title>
+</head>
+<body>
+  <!-- nav bar -->
+    <div id="" class="bg-gray-900  ">
+        <div class="px-2 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-2">
+          <div class="relative flex items-center justify-between">
+            <a href="/" aria-label="ComputerScience" title="ComputerScience" class="inline-flex items-center">
+             <img src="logo.png "class="h-20 w-full ml-10"  alt="">
+            </a>
+            <ul class="flex items-center space-x-8 lg:flex ">
+              <li><a href="index.html" aria-label="Home" title="Home" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:underline">Home</a></li>
+              <li><a href="Department.html" aria-label="Department" title="Department" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:underline ">Department</a></li>
+              <li><a href="Projects.html" aria-label="Research" title="Research" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:underline">Research/Projects</a></li>
+  
+              <li><a href="Clubs.html" aria-label="Clubs" title="Clubs" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:underline">Clubs</a></li>
+              <li><a href="Events.html" aria-label="Events" title="Events" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:underline">Events</a></li>
+              
+            </ul>
+            <!-- Mobile menu -->
+            <div class="">
+              <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+                <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                  <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                  <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+                </svg>
+              </button>
+             </div>
+          </div>
+        </div>
+        <div ></div>
+      </div>
+<div>
+    
+</div>
+      <!-- mini nav bar  -->
+    <div class="flex justify-between px-10 py-1 bg-sky-200">
+        <div><p>Hello UserName</p></div>
+        <div class="flex gap-3"> 
+           <a href="CreateEvent.html">
+            <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="#07aff8" d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"/></svg>
+            <p>Create Event</p>
+          </div> 
+        </a>
+         <a href="Analytics.html">
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><rect width="32" height="32" fill="none"/><path fill="currentColor" d="M4 2H2v26a2 2 0 0 0 2 2h26v-2H4Z"/><path fill="currentColor" d="M30 9h-7v2h3.59L19 18.59l-4.29-4.3a1 1 0 0 0-1.42 0L6 21.59L7.41 23L14 16.41l4.29 4.3a1 1 0 0 0 1.42 0l8.29-8.3V16h2Z"/></svg>  
+                
+               <p>Analytics</p>
+            </div>
+         </a>
+          <a href="Dashboard.html">
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 36 36"><rect width="36" height="36" fill="none"/><path fill="currentColor" d="m25.18 12.32l-5.91 5.81a3 3 0 1 0 1.41 1.42l5.92-5.81Z" class="clr-i-outline clr-i-outline-path-1"/><path fill="currentColor" d="M18 4.25A16.49 16.49 0 0 0 5.4 31.4l.3.35h24.6l.3-.35A16.49 16.49 0 0 0 18 4.25m11.34 25.5H6.66a14.43 14.43 0 0 1-3.11-7.84H7v-2H3.55A14.41 14.41 0 0 1 7 11.29l2.45 2.45l1.41-1.41l-2.43-2.46A14.41 14.41 0 0 1 17 6.29v3.5h2V6.3a14.47 14.47 0 0 1 13.4 13.61h-3.48v2h3.53a14.43 14.43 0 0 1-3.11 7.84" class="clr-i-outline clr-i-outline-path-2"/><path fill="none" d="M0 0h36v36H0z"/></svg>  
+                 <p>Dashboard</p>
+              </div> 
+          </a>
+        
+        </div>
+    </div>  
+ <!-- main area -->
+ <div class="">
+  <!-- SIDE BAR -->
+  
+  <div class=" px-16 py-10">
+    <!-- Event Banner -->
+    <div  class="relative flex flex-col justify-center text-center">
+      <img src="slideshow3.jpg" class="absolute  rounded-3xl  object-cover w-full h-full" alt="" />
+      <div class="relative  bg-opacity-75 ">
+        <div class="px-4 py-16 ">
+          
+            <div class="px-4 py-16">
+              <h2 class=" mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+               EVENT BANNER
+              </h2>
+            </div>
+        
+           
+         
+        </div>
+      </div>
+            </div>
+    <!-- Title-bold -->
+    <h2 class="text-4xl font-bold py-4 text-left">Title of the Event, with few additional words maybe</h2>
+    
+    <div class="text-xl mb-5">
+      <!-- location -->
+      <p id="location" class="hover:underline">
+        Masinde Muliro University of Science and Technology, Kakamega, Kakamega, 50100
+      </p>
+      <br>
+      <!-- Short description -->
+      <p id="shortDes">
+       Abrief Summary of about not more than 50 words to accompany the poster. It should be really brief
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corporis assumenda similique amet sed, delectus et iusto neque doloribus harum deserunt omnis officiis sit repellat quod obcaecati itaque quae odio!
+      </p>
+
+    </div>
+   
+    <!-- Social Media -->
+    <div class="flex gap-2 m-5">
+      
+    <!-- facebook -->  <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M4 12a8 8 0 1 1 9 7.938V14h2a1 1 0 1 0 0-2h-2v-2a1 1 0 0 1 1-1h.5a1 1 0 1 0 0-2H14a3 3 0 0 0-3 3v2H9a1 1 0 1 0 0 2h2v5.938A8.001 8.001 0 0 1 4 12m8 10c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"/></g></svg>
+    <!-- twitter -->   <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"  viewBox="0 0 24 24"><g fill="currentColor"><path d="M1 2h2.5L3.5 2h-2.5z"><animate fill="freeze" attributeName="d" dur="0.4s" values="M1 2h2.5L3.5 2h-2.5z;M1 2h2.5L18.5 22h-2.5z"/></path><path d="M5.5 2h2.5L7.2 2h-2.5z"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5.5 2h2.5L7.2 2h-2.5z;M5.5 2h2.5L23 22h-2.5z"/></path><path d="M3 2h5v0h-5z" opacity="0"><set attributeName="opacity" begin="0.4s" to="1"/><animate fill="freeze" attributeName="d" begin="0.4s" dur="0.4s" values="M3 2h5v0h-5z;M3 2h5v2h-5z"/></path><path d="M16 22h5v0h-5z" opacity="0"><set attributeName="opacity" begin="0.4s" to="1"/><animate fill="freeze" attributeName="d" begin="0.4s" dur="0.4s" values="M16 22h5v0h-5z;M16 22h5v-2h-5z"/></path><path d="M18.5 2h3.5L22 2h-3.5z" opacity="0"><set attributeName="opacity" begin="0.5s" to="1"/><animate fill="freeze" attributeName="d" begin="0.5s" dur="0.4s" values="M18.5 2h3.5L22 2h-3.5z;M18.5 2h3.5L5 22h-3.5z"/></path></g></svg>
+    <!-- linkedLn -->
+    <!-- email -->     <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"  viewBox="0 0 24 24"><path fill="currentColor" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z"/></svg>
+  </div>
+    <!-- date and time with background -->
+    <div class="flex gap-10 items-center py-5 px-3 bg-slate-300 justify-between">
+      <p>Month Date, Starting-Ending time</p>
+      <button class="mr-10 border-2 px-6 py-2 rounded">RSVP Now</button>
+    </div>
+    <!-- About event -->
+    <div>
+      <h3 class="text-5xl py-6">About this event</h3>
+      <!-- Event description -->
+      <p id="EventDescription">
+        A more detailed summary of what the event will be about.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores voluptatibus vel, ex qui harum accusantium consectetur in velit asperiores sit eaque? Aperiam aliquam dolorum exercitationem fugiat, eveniet modi ullam.
+         <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores ipsam aut, a ullam possimus eius consectetur minima sunt, dolore accusamus delectus rerum, aspernatur odit molestias laborum dolor nam esse?. 
+        <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sequi perferendis illo amet libero praesentium, reiciendis rem ad itaque non minus dicta dolore sint totam pariatur possimus sed ipsa architecto.
+      </p>
+    </div>
+    
+    <!-- When, Where -->
+    <div class="P-10 my-4 bg-opacity-15 bg-slate-400" >
+      <div class="flex justify-start gap-4 p-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32"><rect width="32" height="32" fill="none"/><path fill="#07aff8" d="M16 2C8.4 2 2 8.4 2 16s6.4 14 14 14s14-6.4 14-14S23.6 2 16 2m4.587 20L15 16.41V7h2v8.582l5 5.004z"/><path fill="none" d="M20.587 22L15 16.41V7h2v8.582l5 5.005z"/></svg>
+         <div>
+          <h4 class="text-lg">When</h4>
+         <p class="text-sm">Day, Date, Year <br> Start - Stop, Timezone</p>
+      
+         </div>
+        </div>
+      <div  class="flex justify-start gap-4 p-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="#07aff8" d="M12 2c-4.2 0-8 3.22-8 8.2c0 3.18 2.45 6.92 7.34 11.23c.38.33.95.33 1.33 0C17.55 17.12 20 13.38 20 10.2C20 5.22 16.2 2 12 2m-1.77 10.66l-1.41-1.41a.996.996 0 1 1 1.41-1.41l.71.71l2.83-2.83a.996.996 0 1 1 1.41 1.41l-3.54 3.54c-.38.38-1.02.38-1.41-.01"/></svg>
+        <div>
+          <h4 class="text-lg">Where</h4>
+          <p class="text-sm">
+ Masinde Muliro University of Science and Technology <br>
+ Kakamega <br>
+ Kakamega, 50100 <br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Speaker, Facilitator -->
+    <h3 class="text-4xl text-center py-5">Speaker</h3>
+    <div class="flex text-center gap-3 justify-center">
+      
+      <div id="speaker">
+        <!-- image --> <svg xmlns="http://www.w3.org/2000/svg" width="160px" height="160px" viewBox="0 0 24 24"><rect width="50" height="50" fill="none"/><path fill="#07aff8" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2"/></svg>
+        <p>Speaker's Name</p>
+        <p>Speaker's Title</p>
+      </div>
+    </div>
+    <!-- organizers -->
+    <div>
+      <h3 class="text-4xl text-center py-10">Organizers</h3>
+      <div class="grid gap-6 row-gap-8  grid-cols-4">
+        <div class="flex flex-col gap-5">
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-bold">Dr Jasper Ondulo</p>
+            <p class="text-sm text-gray-800">Club Patron</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-bold">Valencia Neema</p>
+            <p class="text-sm text-gray-800">GDSC lead</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931553/pexels-photo-3931553.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-bold">Laria Clarence</p>
+            <p class="text-sm text-gray-800">Health IT lead</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3783255/pexels-photo-3783255.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-bold">Byrone Kingsly</p>
+            <p class="text-sm text-gray-800">ACS Lead</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
