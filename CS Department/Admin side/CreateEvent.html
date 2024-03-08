@@ -36,9 +36,9 @@
       cursor: pointer;
      }
     </style>
-    <li  id="live-btn">Attendees</li>
-    <li  id="draft-btn">Edit</li>
-    <li  id="completed-btn">Cohost</li>
+    <li  id="attendees-btn">Attendees</li>
+    <li  id="edit-btn">Edit</li>
+    <li  id="cohost-btn">Cohost</li>
     
    </ul>
   
@@ -47,7 +47,7 @@
   <div class="bg-white mx-10 h-fit rounded shadow-sm ">
   
     <main id="main-content" class="flex-grow overflow-auto px-4 py-4">
-      <div id="attendees">
+      <div id="Edit">
        <div>
         <p>
           Edit
@@ -229,14 +229,14 @@
         </div>
        </div>
       </div>
-      <div id="draft-content" style="display: none;">
+      <div id="Attendees" style="display: none;">
         <h2>Draft Events</h2>
         <ul>
           <li>Event Name 3 (In Progress)</li>
           <li>Event Name 4 (Needs Approval)</li>
         </ul>
       </div>
-      <div id="completed-content" style="display: none;">
+      <div id="Cohost" style="display: none;">
         <h2>Completed Events</h2>
         <ul>
           <li>Event Name 5 - Last Week</li>
@@ -250,29 +250,29 @@
   </div>
   
   <script>
-    const liveBtn = document.getElementById('live-btn');
-    const draftBtn = document.getElementById('draft-btn');
-    const completedBtn = document.getElementById('completed-btn');
-    const liveContent = document.getElementById('live-content');
-    const draftContent = document.getElementById('draft-content');
-    const completedContent = document.getElementById('completed-content');
+    const attendeesbtn = document.getElementById('attendees-btn');
+    const editbtn = document.getElementById('edit-btn');
+    const cohostbtn = document.getElementById('cohost-btn');
+    const editContent = document.getElementById('Edit');
+    const attendeesContent = document.getElementById('Attendees');
+    const cohostContent = document.getElementById('Cohost');
 
-    liveBtn.addEventListener('click', () => {
-      liveContent.style.display = 'block';
-      draftContent.style.display = 'none';
-      completedContent.style.display = 'none';
+    attendeesbtn.addEventListener('click', () => {
+      attendeesContent.style.display = 'block';
+      editContent.style.display = 'none';
+      cohostContent.style.display = 'none';
     });
 
-    draftBtn.addEventListener('click', () => {
-      liveContent.style.display = 'none';
-      draftContent.style.display = 'block';
-      completedContent.style.display = 'none';
+    editbtn.addEventListener('click', () => {
+      attendeesContent.style.display = 'none';
+      editContent.style.display = 'block';
+      cohostContent.style.display = 'none';
     });
 
-    completedBtn.addEventListener('click', () => {
-      liveContent.style.display = 'none';
-      draftContent.style.display = 'none';
-      completedContent.style.display = 'block';
+    cohostbtn.addEventListener('click', () => {
+      attendeesContent.style.display = 'none';
+      editContent.style.display = 'none';
+      cohostContent.style.display = 'block';
     });
   </script>
 </body>

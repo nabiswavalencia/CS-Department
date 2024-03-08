@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Analytics</title>
+</head>
+<body class="bg-sky-100">
+  <!-- nav bar -->
+   
+<div class="flex flex-col h-screen fixed  w-3/12 ">
+<!-- side bar -->
+<div class="font-semibold py-5 border-2 rounded bg-white px-10  ">
+  <p>Masinde Muliro University of Science and Technology (MMUST)</p>
+</div>
+  <div class="py-1 border-2 px-10 rounded bg-white h-screen">
+    <ul class="flex flex-col gap-6">
+      <a href="Analytics.html"><li id="analytics">Analytics</li></a> 
+     <a href="Dashboard.html"> <li id="events">Events</li></a>  
+      <a href="members.html"> <li id="members">Members</li></a>
+    </ul>
+  </div>
+</div>
+<div class="ml-80">
+ <div class="border-l-2 text-center py-2 text-3xl bg-slate-400">
+
+  <p>Name of Club</p>
+ </div>
+ <div class="flex justify-between items-center px-10 py-10">
+   <ul class="flex gap-4"> 
+    <style> 
+     li:hover {
+      text-decoration: underline;
+      cursor: pointer;
+     }
+    </style>
+    <li>Overview</li>
+    <li>Members</li>
+    <li>Events</li>
+    <li>Attendees</li>
+    <li>Tickets</li>
+    <li>Sponsors</li>
+   </ul>
+  
+ </div>
+
+  <div class="bg-white mx-10 h-56 rounded shadow-sm ">
+  
+    <main id="main-content" class="flex-grow overflow-auto px-4 py-4">
+     
+    </main>
+  </div>
+
+      <!-- mini nav bar  -->
+  </div>
+  
+  <script>
+    const liveBtn = document.getElementById('live-btn');
+    const draftBtn = document.getElementById('draft-btn');
+    const completedBtn = document.getElementById('completed-btn');
+    const liveContent = document.getElementById('live-content');
+    const draftContent = document.getElementById('draft-content');
+    const completedContent = document.getElementById('completed-content');
+
+    liveBtn.addEventListener('click', () => {
+      liveContent.style.display = 'block';
+      draftContent.style.display = 'none';
+      completedContent.style.display = 'none';
+    });
+
+    draftBtn.addEventListener('click', () => {
+      liveContent.style.display = 'none';
+      draftContent.style.display = 'block';
+      completedContent.style.display = 'none';
+    });
+
+    completedBtn.addEventListener('click', () => {
+      liveContent.style.display = 'none';
+      draftContent.style.display = 'none';
+      completedContent.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
