@@ -18,7 +18,7 @@
   <div class="py-1 border-2 px-10 rounded bg-white h-screen">
     <ul class="flex flex-col gap-6">
       <li>Analytics</li>
-      <li>Events</li>
+      <a href="Dashboard.html"> <li>Events</li></a>
       <li>Members</li>
     </ul>
   </div>
@@ -52,18 +52,18 @@
         <p>
           Edit
         </p>
-        <div class="bg-slate-600 ">
-           <ul  class="flex justify-center items-center gap-3">
+        <div class="bg-slate-600 my-5 py-3 ">
+           <ul  class="flex px-5 items-center gap-5 list-disc">
           <li>General information</li>
-          <li>People</li>
+          
         </ul> 
 
       </div>
         <div>
-          <div>
+          
             <!-- Event banner -->
             <div class="col-span-full">
-              <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Event Banner</label>
+              <label for="cover-photo" class="block text-sm bg-gray-300 rounded px-4 font-medium leading-6 text-gray-900">Event Banner</label>
               <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
                 <div class="text-center">
                   <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -80,8 +80,8 @@
                 </div>
               </div>
             </div>
-
-          </div>
+          <!-- Title -->
+         
           <div class="col-span-full py-5">
             <label for="about" class="block text-sm bg-gray-300 rounded px-4 font-medium leading-6 text-gray-900">Title</label>
             <div class="mt-2">
@@ -89,6 +89,7 @@
             </div>
             <p class="mt-3 text-sm leading-6 text-gray-600">0/100</p>
           </div>
+          <!-- Short description -->
           <div class="col-span-full py-5">
             <label for="about" class="block text-sm bg-gray-300 rounded px-4 font-medium leading-6 text-gray-900">Short description</label>
             <div class="mt-2">
@@ -96,6 +97,7 @@
             </div>
             <p class="mt-3 text-sm leading-6 text-gray-600">Displayed on chapter page and newsletters</p>
           </div>
+          <!-- Event description -->
           <div class="col-span-full py-5">
             <label for="about" class="block text-sm bg-gray-300 rounded px-4 font-medium leading-6 text-gray-900">Event Description</label>
             <div class="mt-2">
@@ -103,10 +105,11 @@
             </div>
             <p class="mt-3 text-sm leading-6 text-gray-600">Displayed only on the event page. Add images by dragging them into the section above</p>
           </div>
+          <!-- Event thumbnail -->
           <div class="col-span-full py-5">
             <label for="photo" class="block text-sm bg-gray-300 rounded px-4 font-medium leading-6 text-gray-900">Event thumbnail</label>
             <div class="mt-2 flex items-center gap-x-3">
-              <svg class="h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <svg class="h-40 w-40 border-2 rounded text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
               </svg>
               <button type="button" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Upload Image</button>
@@ -114,7 +117,115 @@
             <p class="mt-3 text-sm leading-6 text-gray-600">Displayed on chapter page, upcoming events page and social media</p>
 
           </div>
-        
+        <!-- Event venue -->
+        <div class="col-span-full py-5">
+          <label for="photo" class="block text-sm bg-gray-300 rounded px-4 font-medium leading-6 text-gray-900">Event venue</label>
+
+          <div class="mt-6  space-y-6">
+            <div class="flex items-center gap-x-3">
+              <input id="push-everything" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+              <label for="push-everything" class="block text-sm font-medium leading-6 text-gray-900">Hybrid</label>
+            </div>
+            <div class="flex items-center gap-x-3">
+              <input id="push-email" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+              <label for="push-email" class="block text-sm font-medium leading-6 text-gray-900">Virtual</label>
+            </div>
+            <div class="flex items-center gap-x-3">
+              <input id="push-nothing" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+              <label for="push-nothing" class="block text-sm font-medium leading-6 text-gray-900">In person</label>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Schedule -->
+       <div class="col-span-full py-5 flex justify-around">
+  <div class="sm:col-span-2 sm:col-start-1">
+    <label for="city" class="block text-sm font-medium leading-6 text-gray-900">Events Starts</label>
+    <div class="mt-2">
+      <input type="text" name="city" id="city" autocomplete="address-level2" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+    </div>
+  </div>
+
+  <div class="sm:col-span-2">
+    <label for="region" class="block text-sm font-medium leading-6 text-gray-900">Event ends</label>
+    <div class="mt-2">
+      <input type="text" name="region" id="region" autocomplete="address-level1" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+    </div>
+  </div>
+
+  <div class="sm:col-span-2">
+    <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">Time zone</label>
+    <div class="mt-2">
+      <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+    </div>
+  </div>
+      </div>
+
+      <!-- people -->
+      <div class="bg-slate-600 my-5 py-1">
+        <ul  class="flex px-5  items-center gap-5 list-disc">
+       <li>People</li>
+         </ul> 
+      </div>
+      <div class="col-span-full py-5">
+        <label for="photo" class="block text-sm bg-gray-300 rounded px-4 font-medium leading-6 text-gray-900">Speaker</label>
+       <style>
+        ul{
+          display: flex;
+          margin: 10px;
+        }
+        input{
+          border: 1px solid rgb(194, 189, 189);
+          padding: 4px;
+        }
+       </style>
+        <ul >
+          <li>
+            <label for="">First Name</label>
+            <input type="text" name="" id="" placeholder="John">
+          </li>
+          <li>
+            <label for="">Last Name</label>
+            <input type="text" name="" id="" placeholder="Smith">
+          </li>
+          <li>
+            <label for="">Company</label>
+            <input type="text" name="" id="" placeholder="Company">
+          </li>
+          <li>
+            <label for="">Title</label>
+            <input type="text" name="" id="" placeholder="Title">
+          </li>
+        </ul>
+     
+
+
+      </div>
+      <div class="col-span-full ">
+        <label for="about" class="block text-sm bg-gray-300 rounded px-4 font-medium leading-6 text-gray-900"></label>Biography(displayed on event page)
+        <div class="mt-2">
+          <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 bg-sky-100 "></textarea>
+        </div>
+      </div>
+      <div class="col-span-full py-5">
+        <label for="photo" class="block text-sm bg-gray-300 rounded px-4 font-medium leading-6 text-gray-900">Speaker's Image</label>
+        <div class="mt-2 flex items-center gap-x-3">
+          <svg class="h-40 w-40 border-2 rounded text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+          </svg>
+          <button type="button" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Upload Image</button>
+        </div>
+
+      </div>
+      
+      <div class="bg-slate-600 my-5 py-1 flex justify-end pr-5 gap-3 text-white font-semibold">
+        <button class=" p-2"> Publish</button>
+        <button class="p-2">Save draft</button>
+      </div>
+
+
         </div>
        </div>
       </div>
